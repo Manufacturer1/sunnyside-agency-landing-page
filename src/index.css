@@ -21,7 +21,29 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
-
+picture{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+img{
+  width: min(600px, 100%);
+  height: 100%;
+  object-fit: cover;
+}
+.transform-brand-picture{
+  background: linear-gradient(to bottom, #FFD601, #FFD201);
+}
+.stand-out-picture {
+  justify-content: end;
+  background: linear-gradient(to bottom, #FE796A, #FF7E71);
+}
+.graphic-design-picture{
+  justify-content: end;
+  background: linear-gradient(to bottom, #A0DDCD, #9DDACA);
+}
+.photography-picture{
+  background: linear-gradient(to bottom, #51CCFF, #5CCFFF);
+}
 
 
