@@ -13,7 +13,8 @@ export default {
           yellowLight:'hsl(51, 85%, 73%)',
           graphicDesignText:'hsl(167, 40%, 24%)',
           photographyText:'hsl(198, 62%, 26%)',
-          footer:'hsl(168, 34%, 41%)'
+          footer:'hsl(168, 34%, 41%)',
+          hoverBtn:'hsl(198, 96%, 73%)'
         },
         neutral:{
           veryDarkBlue:'hsl(212, 27%, 19%)',

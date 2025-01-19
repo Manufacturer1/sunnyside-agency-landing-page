@@ -46,4 +46,27 @@ img{
   background: linear-gradient(to bottom, #51CCFF, #5CCFFF);
 }
 
+.icon:hover {
+  filter: invert(1) brightness(2);
+  transition: filter 0.3s ease;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+  75% {
+    transform: translateY(-6px);
+  }
+}
+
+.shake {
+  animation: shake 1s ease-in-out infinite;
+}
 

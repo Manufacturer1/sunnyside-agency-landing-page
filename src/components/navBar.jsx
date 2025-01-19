@@ -47,7 +47,7 @@ const NavBar = () => {
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Projects</a></li>
                 <li>
-                  <button className="bg-white rounded-[30px] text-base font-Fraunces font-bold text-neutral-veryDarkBlue uppercase px-6 py-[.9rem]">
+                  <button className="bg-white rounded-[30px] text-base font-Fraunces font-bold text-neutral-veryDarkBlue uppercase px-6 py-[.9rem] hover:bg-primary-hoverBtn hover:text-white transition-all duration-300">
                     Contact
                   </button>
                 </li>
@@ -65,7 +65,11 @@ const NavBar = () => {
           <h1 className="text-white uppercase text-center text-4xl sm:text-6xl font-bold font-Fraunces tracking-[.7rem] mb-20">
             We Are Creatives
           </h1>
-          <button className="block m-auto">
+          <button 
+          className="block m-auto shake"
+          onClick={() => {
+            document.getElementById("hero").scrollIntoView({ behavior: "smooth" });
+          }}>
             <img src={iconArrowDown} alt="See more content" />
           </button>
         </div>

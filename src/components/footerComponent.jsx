@@ -17,11 +17,12 @@ const Footer = () =>{
                 stroke-width="0.5"/></svg>
  
             </div>
-            <ul className="flex justify-center gap-16 text-lg text-primary-footer font-medium mb-14">
+            <ul className="flex justify-center gap-16 text-lg font-medium mb-14">
                 {
                     footerNav.map((item,index) =>{
                         return(
-                            <li key={index}>
+                            <li className='text-primary-footer hover:text-white transition-all duration-300'
+                             key={index}>
                                 <a href="#">{item}</a>
                             </li>
                         )
@@ -33,9 +34,10 @@ const Footer = () =>{
                 {
                     icons.map((icon,index) =>{
                         return(
-                        <li className='w-5' key={index}>
+                        <li className='w-5' 
+                        key={index}>
                             <a href='#'>
-                                <img className='object-cover w-full h-full block' src={icon} />
+                                <img className='object-cover w-full h-full block icon' src={icon} />
                             </a>
                         </li>
                         )
