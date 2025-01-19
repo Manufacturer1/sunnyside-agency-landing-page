@@ -36,7 +36,7 @@ const Hero = () => {
         isTextLeft={false}
       />
 
-      <section className="h-[550px] overflow-hidden grid grid-cols-2">
+      <section className="h-[1000px] md:h-[550px] overflow-hidden grid grid-rows-2 md:grid-cols-2 md:grid-rows-1">
         <ImageSection
           title="Graphic Design"
           description="Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention."

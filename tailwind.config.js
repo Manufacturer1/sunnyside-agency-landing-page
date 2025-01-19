@@ -10,6 +10,7 @@ export default {
         primary:{
           softRed:'hsl(7, 99%, 70%)',
           yellow:'hsl(51, 100%, 49%)',
+          yellowLight:'hsl(51, 85%, 73%)',
           graphicDesignText:'hsl(167, 40%, 24%)',
           photographyText:'hsl(198, 62%, 26%)',
           footer:'hsl(168, 34%, 41%)'

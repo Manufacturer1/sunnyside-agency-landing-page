@@ -12,6 +12,9 @@ import desktopImageOrange from './images/desktop/image-gallery-orange.jpg';
 import mobileImageOrange from './images/mobile/image-gallery-orange.jpg';
 import desktopImageCon from './images/desktop/image-gallery-cone.jpg';
 import mobileImageCon from './images/mobile/image-gallery-cone.jpg';
+import desktopImageSugar from './images/desktop/image-gallery-sugarcubes.jpg';
+import mobileImageSugar from './images/mobile/image-gallery-sugar-cubes.jpg';
+
 
 function App() {
 
@@ -47,6 +50,10 @@ function App() {
     {
       mobileImage:mobileImageCon,
       desktopImage:desktopImageCon
+    },
+    {
+      mobileImage:mobileImageSugar,
+      desktopImage:desktopImageSugar
     }
   ];
 
@@ -58,9 +65,9 @@ function App() {
         <div>
           <Hero/>
       </div>
-      <div className="h-[600px] py-32">
-          <h1 className="text-center text-2xl font-bold font-Fraunces uppercase text-neutral-grayishBlue tracking-widest mb-16">Client Testimonials</h1>
-          <div className="flex gap-10 justify-center">
+      <div className="md:h-[600px] py-16 md:py-32">
+          <h1 className="text-center md:text-2xl text-xl font-bold font-Fraunces uppercase text-neutral-grayishBlue tracking-widest mb-16">Client Testimonials</h1>
+          <div className="flex flex-col md:flex-row gap-16 md:gap-10 justify-center items-center">
              {
               testimonials.map((testimonal,index) =>{
                   return(
@@ -76,11 +83,12 @@ function App() {
              }
           </div>
       </div>
-      <div className="grid grid-cols-3 max-h-[550px] overflow-hidden">
+      <div className="grid grid-cols-2 md:grid-cols-4 max-h-[550px] overflow-hidden">
             {
-              footerImages.map((section) =>{
+              footerImages.map((section,index) =>{
                 return(
                   <FooterImageSection
+                    key={index}
                     mobileImage={section.mobileImage}
                     desktopImage={section.desktopImage}
                   />
@@ -89,7 +97,7 @@ function App() {
             }
       </div>
       <div>
-            <Footer/>
+          <Footer/>
       </div>
     </>
   );
