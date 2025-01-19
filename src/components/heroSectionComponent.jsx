@@ -17,7 +17,7 @@ const HeroSection = ({ title, description, buttonLabel, buttonColor, imageSrcDes
       {/* Text Section */}
       <div
         className={`flex flex-col justify-center md:p-[5rem] p-6 max-w-[610px] md:text-left text-center ${
-          isTextLeft ? 'md:col-start-1 md:row-start-1' : 'md:col-start-2 md:row-start-1'
+          isTextLeft ? 'md:ml-auto md:col-start-1 md:row-start-1' : 'md:mr-auto md:col-start-2 md:row-start-1'
         } row-start-2`}
       >
         <h2 className="md:text-5xl text-4xl font-extrabold text-neutral-veryDarkBlue mb-8">
